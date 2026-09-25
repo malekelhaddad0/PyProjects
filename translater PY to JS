@@ -1,0 +1,13 @@
+#NOTE: the project is not fully
+import re
+variables=[]
+values=[]
+JSkeyword=["="]
+JScode= input("write a python code to translate it to JS:\n")
+if "=" in JScode:
+    parts= JScode.split("=")
+    var_name= parts[0].strip()
+    var_value= parts[1].strip()
+    variables.append(var_name)
+    values.append(var_value)
+    print("let" , variables[0] , "=" , values[0], ";")
